@@ -40,9 +40,12 @@ class SearchViewModel {
                 
                 self?.products.value = records
                 
-                if records.count == 0 {
+                if let product = records.first {
+                    self?.searchRepository.save(term: term, image: product.image)
+                } else {
                     self?.message.value = "No se encontraron productos para \(term)"
                 }
+
             }
             
         }.disposed(by: disposeBag)

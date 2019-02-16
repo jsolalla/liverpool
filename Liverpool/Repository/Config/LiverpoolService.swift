@@ -51,7 +51,7 @@ class LiverpoolMoyaProvider {
     init(endpointClosure: @escaping MoyaProvider<LiverpoolEndpoint>.EndpointClosure = MoyaProvider.defaultEndpointMapping,
          stubClosure: @escaping MoyaProvider<LiverpoolEndpoint>.StubClosure = MoyaProvider.neverStub,
          manager: Manager = MoyaProvider<LiverpoolEndpoint>.defaultAlamofireManager(),
-         plugins: [PluginType] = [NetworkLoggerPlugin(verbose: true)],
+         plugins: [PluginType] = [NetworkLoggerPlugin(verbose: Constants.showLogs)],
          trackInflights: Bool = false) {
         self.provider = MoyaProvider<LiverpoolEndpoint>(endpointClosure: endpointClosure, stubClosure: stubClosure, callbackQueue: nil, manager: manager, plugins: plugins, trackInflights: trackInflights)
     }

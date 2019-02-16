@@ -32,6 +32,8 @@
 		EA3C26A42218ADBD00584D16 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A32218ADBD00584D16 /* UIViewController+Extensions.swift */; };
 		EA3C26A62218AE0A00584D16 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A52218AE0A00584D16 /* UIColor+Extensions.swift */; };
 		EA3C26A82218AF6900584D16 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */; };
+		EA3C26AB2218B39D00584D16 /* SearchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26AA2218B39D00584D16 /* SearchRecord.swift */; };
+		EA3C26AD2218B3CA00584D16 /* RealmSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26AC2218B3CA00584D16 /* RealmSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		EA3C26A32218ADBD00584D16 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		EA3C26A52218AE0A00584D16 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
+		EA3C26AA2218B39D00584D16 /* SearchRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecord.swift; sourceTree = "<group>"; };
+		EA3C26AC2218B3CA00584D16 /* RealmSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,7 @@
 			children = (
 				EA3C269822189D0600584D16 /* APIResult.swift */,
 				EA3C269A22189E9F00584D16 /* Search.swift */,
+				EA3C26AA2218B39D00584D16 /* SearchRecord.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 		EA3C269722189CFC00584D16 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				EA3C26AC2218B3CA00584D16 /* RealmSearch.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				EA3C269922189D0600584D16 /* APIResult.swift in Sources */,
 				EA3C266222188C7000584D16 /* AppDelegate.swift in Sources */,
 				EA3C268B221893E500584D16 /* HomeViewController.swift in Sources */,
+				EA3C26AD2218B3CA00584D16 /* RealmSearch.swift in Sources */,
 				EA3C26A62218AE0A00584D16 /* UIColor+Extensions.swift in Sources */,
 				EA3C26932218945000584D16 /* HomeRepository.swift in Sources */,
 				EA3C268F2218940700584D16 /* HomeViewModel.swift in Sources */,
@@ -398,6 +405,7 @@
 				EA3C26812218934C00584D16 /* LiverpoolEndpoint.swift in Sources */,
 				EA3C269522189A3100584D16 /* LiverpoolParams.swift in Sources */,
 				EA3C269B22189E9F00584D16 /* Search.swift in Sources */,
+				EA3C26AB2218B39D00584D16 /* SearchRecord.swift in Sources */,
 				EA3C267B221892A700584D16 /* Constants.swift in Sources */,
 				EA3C26852218937F00584D16 /* SearchRepository.swift in Sources */,
 			);

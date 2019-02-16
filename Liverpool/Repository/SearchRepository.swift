@@ -12,6 +12,7 @@ import Mapper
 
 protocol LiverpoolSearchRepository {
     func search(for term: String) -> Observable<APIResult<Search>>
+    func save(term: String, image: String)
 }
 
 class SearchRepository: BaseRepository, LiverpoolSearchRepository {
@@ -51,6 +52,18 @@ class SearchRepository: BaseRepository, LiverpoolSearchRepository {
     
     func search(for term: String) -> Observable<APIResult<Search>> {
         return observable(searchEnpoint: .search(term: term))
+    }
+    
+    func save(term: String, image: String) {
+        
+        let realmSearch = RealmSearch()
+        realmSearch.term = term
+        realmSearch.image = image
+        
+        try! realm.write {
+            realm.add(realmSearch, update: true)
+        }
+        
     }
     
 }

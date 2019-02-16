@@ -27,6 +27,11 @@
 		EA3C269922189D0600584D16 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269822189D0600584D16 /* APIResult.swift */; };
 		EA3C269B22189E9F00584D16 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269A22189E9F00584D16 /* Search.swift */; };
 		EA3C269D2218A0F600584D16 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269C2218A0F600584D16 /* String+Extensions.swift */; };
+		EA3C26A02218A86400584D16 /* SearchProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269F2218A86400584D16 /* SearchProductTableViewCell.swift */; };
+		EA3C26A22218AC9500584D16 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A12218AC9500584D16 /* Double+Extensions.swift */; };
+		EA3C26A42218ADBD00584D16 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A32218ADBD00584D16 /* UIViewController+Extensions.swift */; };
+		EA3C26A62218AE0A00584D16 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A52218AE0A00584D16 /* UIColor+Extensions.swift */; };
+		EA3C26A82218AF6900584D16 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		EA3C269822189D0600584D16 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
 		EA3C269A22189E9F00584D16 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		EA3C269C2218A0F600584D16 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		EA3C269F2218A86400584D16 /* SearchProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductTableViewCell.swift; sourceTree = "<group>"; };
+		EA3C26A12218AC9500584D16 /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		EA3C26A32218ADBD00584D16 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		EA3C26A52218AE0A00584D16 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 				EA3C26732218913F00584D16 /* Config */,
 				EA3C26742218914D00584D16 /* Scenes */,
 				EA3C26752218915600584D16 /* Repository */,
+				EA3C269E2218A84A00584D16 /* Symbols */,
 				EA3C26762218915C00584D16 /* Model */,
 				EA3C267C221892EE00584D16 /* Resources */,
 				EA3C26772218916500584D16 /* Extensions */,
@@ -161,7 +172,11 @@
 		EA3C26772218916500584D16 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EA3C26A52218AE0A00584D16 /* UIColor+Extensions.swift */,
 				EA3C269C2218A0F600584D16 /* String+Extensions.swift */,
+				EA3C26A12218AC9500584D16 /* Double+Extensions.swift */,
+				EA3C26A32218ADBD00584D16 /* UIViewController+Extensions.swift */,
+				EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -216,6 +231,14 @@
 			children = (
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		EA3C269E2218A84A00584D16 /* Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C269F2218A86400584D16 /* SearchProductTableViewCell.swift */,
+			);
+			path = Symbols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,14 +382,19 @@
 				EA3C268D221893EF00584D16 /* SearchViewController.swift in Sources */,
 				EA3C26792218929E00584D16 /* API.swift in Sources */,
 				EA3C26832218935D00584D16 /* LiverpoolService.swift in Sources */,
+				EA3C26A82218AF6900584D16 /* UISearchBar+Extensions.swift in Sources */,
+				EA3C26A02218A86400584D16 /* SearchProductTableViewCell.swift in Sources */,
 				EA3C26872218939700584D16 /* BaseRepository.swift in Sources */,
 				EA3C269D2218A0F600584D16 /* String+Extensions.swift in Sources */,
+				EA3C26A42218ADBD00584D16 /* UIViewController+Extensions.swift in Sources */,
 				EA3C26912218940F00584D16 /* SearchViewModel.swift in Sources */,
 				EA3C269922189D0600584D16 /* APIResult.swift in Sources */,
 				EA3C266222188C7000584D16 /* AppDelegate.swift in Sources */,
 				EA3C268B221893E500584D16 /* HomeViewController.swift in Sources */,
+				EA3C26A62218AE0A00584D16 /* UIColor+Extensions.swift in Sources */,
 				EA3C26932218945000584D16 /* HomeRepository.swift in Sources */,
 				EA3C268F2218940700584D16 /* HomeViewModel.swift in Sources */,
+				EA3C26A22218AC9500584D16 /* Double+Extensions.swift in Sources */,
 				EA3C26812218934C00584D16 /* LiverpoolEndpoint.swift in Sources */,
 				EA3C269522189A3100584D16 /* LiverpoolParams.swift in Sources */,
 				EA3C269B22189E9F00584D16 /* Search.swift in Sources */,
@@ -521,6 +549,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4B5SM67ER;
 				INFOPLIST_FILE = Liverpool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +569,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4B5SM67ER;
 				INFOPLIST_FILE = Liverpool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

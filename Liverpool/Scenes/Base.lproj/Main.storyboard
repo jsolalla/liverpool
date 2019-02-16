@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Liverpool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Liverpool" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="943" y="-671"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="fN1-Wl-5i8">
+            <objects>
+                <viewController storyboardIdentifier="SearchViewController" id="uJU-lf-yTa" customClass="SearchViewController" customModule="Liverpool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bh2-BU-CLq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EjT-Fv-hnr">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" rowHeight="160" id="3nq-eo-egU" customClass="SearchProductTableViewCell" customModule="Liverpool" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3nq-eo-egU" id="41E-Qe-JQG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWi-r9-k7G">
+                                                    <rect key="frame" x="15" y="11" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="ZWn-DV-Rud"/>
+                                                        <constraint firstAttribute="width" constant="100" id="pc7-cD-Y9x"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Computadora HP All-in-One 24-r018 23.8 Pulgadas AMD 12 Quad-Core 8 GB RAM 2 TB Disco Duro" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcw-XD-9mY">
+                                                    <rect key="frame" x="127" y="11" width="233" height="81.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$18,899.10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdV-0c-wTB">
+                                                    <rect key="frame" x="127" y="100.5" width="90" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FWi-r9-k7G" firstAttribute="top" secondItem="41E-Qe-JQG" secondAttribute="topMargin" id="BW0-Rs-c4j"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FWi-r9-k7G" secondAttribute="bottom" constant="16" id="Slb-L2-cWE"/>
+                                                <constraint firstItem="gdV-0c-wTB" firstAttribute="leading" secondItem="Bcw-XD-9mY" secondAttribute="leading" id="XyX-xc-A2c"/>
+                                                <constraint firstItem="Bcw-XD-9mY" firstAttribute="trailing" secondItem="41E-Qe-JQG" secondAttribute="trailingMargin" id="c3G-Mx-Mwb"/>
+                                                <constraint firstItem="Bcw-XD-9mY" firstAttribute="leading" secondItem="FWi-r9-k7G" secondAttribute="trailing" constant="12" id="dbG-EH-cqb"/>
+                                                <constraint firstItem="FWi-r9-k7G" firstAttribute="leading" secondItem="41E-Qe-JQG" secondAttribute="leadingMargin" id="ivZ-eA-60I"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gdV-0c-wTB" secondAttribute="bottom" constant="16" id="tmo-Or-tun"/>
+                                                <constraint firstItem="Bcw-XD-9mY" firstAttribute="top" secondItem="41E-Qe-JQG" secondAttribute="topMargin" id="ui4-Mn-01G"/>
+                                                <constraint firstItem="gdV-0c-wTB" firstAttribute="top" secondItem="Bcw-XD-9mY" secondAttribute="bottom" constant="8" id="vGB-BU-qbW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgProduct" destination="FWi-r9-k7G" id="yoi-zb-9WU"/>
+                                            <outlet property="lblDisplayName" destination="Bcw-XD-9mY" id="6WS-zX-4K9"/>
+                                            <outlet property="lblPrice" destination="gdV-0c-wTB" id="WY6-fv-mqo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="uJU-lf-yTa" id="7s6-hJ-3Jv"/>
+                                    <outlet property="delegate" destination="uJU-lf-yTa" id="Jxx-Wz-SbH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EjT-Fv-hnr" firstAttribute="top" secondItem="58i-m4-DRo" secondAttribute="top" id="6f1-cA-aTf"/>
+                            <constraint firstItem="EjT-Fv-hnr" firstAttribute="leading" secondItem="58i-m4-DRo" secondAttribute="leading" id="6vl-Ls-AhA"/>
+                            <constraint firstItem="EjT-Fv-hnr" firstAttribute="trailing" secondItem="58i-m4-DRo" secondAttribute="trailing" id="ACU-tU-ouf"/>
+                            <constraint firstItem="EjT-Fv-hnr" firstAttribute="bottom" secondItem="Bh2-BU-CLq" secondAttribute="bottom" id="i0K-hB-apg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="58i-m4-DRo"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="EjT-Fv-hnr" id="fSv-hM-ggR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L42-UC-ooU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1903.2" y="-670.61469265367316"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sCn-d6-3Bk">

@@ -7,7 +7,21 @@
 //
 
 import Foundation
+import RxSwift
 
 class HomeViewModel {
+    
+    private let homeRepository: LiverpoolHomeRepository
+    
+    let terms = Variable<[RealmSearch]>([])
+    
+    required init() {
+        homeRepository = HomeRepository()
+        updateTerms()
+    }
+    
+    func updateTerms() {
+        terms.value = homeRepository.getSearchTerms()
+    }
     
 }

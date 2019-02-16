@@ -34,6 +34,7 @@
 		EA3C26A82218AF6900584D16 /* UISearchBar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */; };
 		EA3C26AB2218B39D00584D16 /* SearchRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26AA2218B39D00584D16 /* SearchRecord.swift */; };
 		EA3C26AD2218B3CA00584D16 /* RealmSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26AC2218B3CA00584D16 /* RealmSearch.swift */; };
+		EA3C26AF2218B8A400584D16 /* SearchTermTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26AE2218B8A400584D16 /* SearchTermTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		EA3C26A72218AF6900584D16 /* UISearchBar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extensions.swift"; sourceTree = "<group>"; };
 		EA3C26AA2218B39D00584D16 /* SearchRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecord.swift; sourceTree = "<group>"; };
 		EA3C26AC2218B3CA00584D16 /* RealmSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSearch.swift; sourceTree = "<group>"; };
+		EA3C26AE2218B8A400584D16 /* SearchTermTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				EA3C269F2218A86400584D16 /* SearchProductTableViewCell.swift */,
+				EA3C26AE2218B8A400584D16 /* SearchTermTableViewCell.swift */,
 			);
 			path = Symbols;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				EA3C269D2218A0F600584D16 /* String+Extensions.swift in Sources */,
 				EA3C26A42218ADBD00584D16 /* UIViewController+Extensions.swift in Sources */,
 				EA3C26912218940F00584D16 /* SearchViewModel.swift in Sources */,
+				EA3C26AF2218B8A400584D16 /* SearchTermTableViewCell.swift in Sources */,
 				EA3C269922189D0600584D16 /* APIResult.swift in Sources */,
 				EA3C266222188C7000584D16 /* AppDelegate.swift in Sources */,
 				EA3C268B221893E500584D16 /* HomeViewController.swift in Sources */,

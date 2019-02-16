@@ -14,7 +14,6 @@ struct Constants {
     static let defaultCellLoadImage = UIImage(named: "loading")
     static let defaultNukeOptions = ImageLoadingOptions(placeholder: Constants.defaultCellLoadImage, transition: .fadeIn(duration: 0.33))
     static let defaultErrorKey = "com.liverpool.service.error"
-    static let defaultMaxSearchCriteria = 5
     static let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
     static let showLogs = false
     

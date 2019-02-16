@@ -11,10 +11,13 @@ import RxSwift
 import Mapper
 
 protocol LiverpoolHomeRepository {
-    
+    func getSearchTerms() -> [RealmSearch]
 }
 
 class HomeRepository: BaseRepository, LiverpoolHomeRepository {
     
-
+    func getSearchTerms() -> [RealmSearch] {
+        return Array(realm.objects(RealmSearch.self).sorted(byKeyPath: "created", ascending: false))
+    }
+    
 }

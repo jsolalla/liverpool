@@ -9,6 +9,10 @@
 import UIKit
 import RxSwift
 
+protocol SearchViewControllerDelegate: class {
+    func searchCanceled()
+}
+
 class SearchViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
@@ -16,19 +20,22 @@ class SearchViewController: UIViewController {
     let searchViewModel = SearchViewModel()
     let disposeBag = DisposeBag.init()
     
+    weak var delegate: SearchViewControllerDelegate?
+    
     var products: [SearchRecord] = []
     var searchBar: UISearchBar?
     var activityView: UIView?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        observe()
-    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        observe()
+        tableView.tableFooterView = UIView()
+    }
+
     func observe() {
         
         searchViewModel.products.asObservable().bind { [weak self] (products) in
@@ -89,9 +96,12 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         products = []
         tableView.reloadData()
+        delegate?.searchCanceled()
     }
     
 }
+
+// MARK: - UITableViewDataSource
 
 extension SearchViewController: UITableViewDataSource {
     
@@ -106,6 +116,8 @@ extension SearchViewController: UITableViewDataSource {
     }
     
 }
+
+// MARK: - UITableViewDelegate
 
 extension SearchViewController: UITableViewDelegate {
     

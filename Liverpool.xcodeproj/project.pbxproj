@@ -9,10 +9,21 @@
 /* Begin PBXBuildFile section */
 		517BE082A25D759C4BC98A15 /* Pods_Liverpool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F81A3DB62541BAC404D7B75 /* Pods_Liverpool.framework */; };
 		EA3C266222188C7000584D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C266122188C7000584D16 /* AppDelegate.swift */; };
-		EA3C266422188C7000584D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C266322188C7000584D16 /* ViewController.swift */; };
 		EA3C266722188C7000584D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C266522188C7000584D16 /* Main.storyboard */; };
 		EA3C266922188C7200584D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA3C266822188C7200584D16 /* Assets.xcassets */; };
 		EA3C266C22188C7200584D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C266A22188C7200584D16 /* LaunchScreen.storyboard */; };
+		EA3C26792218929E00584D16 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26782218929E00584D16 /* API.swift */; };
+		EA3C267B221892A700584D16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C267A221892A700584D16 /* Constants.swift */; };
+		EA3C267F2218933F00584D16 /* RepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C267E2218933F00584D16 /* RepositoryManager.swift */; };
+		EA3C26812218934C00584D16 /* LiverpoolEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */; };
+		EA3C26832218935D00584D16 /* LiverpoolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26822218935D00584D16 /* LiverpoolService.swift */; };
+		EA3C26852218937F00584D16 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26842218937F00584D16 /* SearchRepository.swift */; };
+		EA3C26872218939700584D16 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26862218939700584D16 /* BaseRepository.swift */; };
+		EA3C268B221893E500584D16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C268A221893E500584D16 /* HomeViewController.swift */; };
+		EA3C268D221893EF00584D16 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C268C221893EF00584D16 /* SearchViewController.swift */; };
+		EA3C268F2218940700584D16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C268E2218940700584D16 /* HomeViewModel.swift */; };
+		EA3C26912218940F00584D16 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26902218940F00584D16 /* SearchViewModel.swift */; };
+		EA3C26932218945000584D16 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26922218945000584D16 /* HomeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +32,22 @@
 		A7EC6B635D313F5FA4043324 /* Pods-Liverpool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Liverpool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Liverpool/Pods-Liverpool.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3C265E22188C7000584D16 /* Liverpool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liverpool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3C266122188C7000584D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA3C266322188C7000584D16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA3C266622188C7000584D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA3C266822188C7200584D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA3C266B22188C7200584D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA3C266D22188C7200584D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA3C26782218929E00584D16 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EA3C267A221892A700584D16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA3C267E2218933F00584D16 /* RepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManager.swift; sourceTree = "<group>"; };
+		EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolEndpoint.swift; sourceTree = "<group>"; };
+		EA3C26822218935D00584D16 /* LiverpoolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolService.swift; sourceTree = "<group>"; };
+		EA3C26842218937F00584D16 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		EA3C26862218939700584D16 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		EA3C268A221893E500584D16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA3C268C221893EF00584D16 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EA3C268E2218940700584D16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EA3C26902218940F00584D16 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		EA3C26922218945000584D16 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +101,96 @@
 			isa = PBXGroup;
 			children = (
 				EA3C266122188C7000584D16 /* AppDelegate.swift */,
-				EA3C266322188C7000584D16 /* ViewController.swift */,
-				EA3C266522188C7000584D16 /* Main.storyboard */,
-				EA3C266822188C7200584D16 /* Assets.xcassets */,
-				EA3C266A22188C7200584D16 /* LaunchScreen.storyboard */,
 				EA3C266D22188C7200584D16 /* Info.plist */,
+				EA3C26732218913F00584D16 /* Config */,
+				EA3C26742218914D00584D16 /* Scenes */,
+				EA3C26752218915600584D16 /* Repository */,
+				EA3C26762218915C00584D16 /* Model */,
+				EA3C267C221892EE00584D16 /* Resources */,
+				EA3C26772218916500584D16 /* Extensions */,
 			);
 			path = Liverpool;
+			sourceTree = "<group>";
+		};
+		EA3C26732218913F00584D16 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C26782218929E00584D16 /* API.swift */,
+				EA3C267A221892A700584D16 /* Constants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EA3C26742218914D00584D16 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C266522188C7000584D16 /* Main.storyboard */,
+				EA3C266A22188C7200584D16 /* LaunchScreen.storyboard */,
+				EA3C2688221893B800584D16 /* Home */,
+				EA3C2689221893BF00584D16 /* Search */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EA3C26752218915600584D16 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C267D2218932C00584D16 /* Config */,
+				EA3C26862218939700584D16 /* BaseRepository.swift */,
+				EA3C26922218945000584D16 /* HomeRepository.swift */,
+				EA3C26842218937F00584D16 /* SearchRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA3C26762218915C00584D16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA3C26772218916500584D16 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA3C267C221892EE00584D16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C266822188C7200584D16 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA3C267D2218932C00584D16 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C267E2218933F00584D16 /* RepositoryManager.swift */,
+				EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */,
+				EA3C26822218935D00584D16 /* LiverpoolService.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		EA3C2688221893B800584D16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C268A221893E500584D16 /* HomeViewController.swift */,
+				EA3C268E2218940700584D16 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EA3C2689221893BF00584D16 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C268C221893EF00584D16 /* SearchViewController.swift */,
+				EA3C26902218940F00584D16 /* SearchViewModel.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +331,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA3C266422188C7000584D16 /* ViewController.swift in Sources */,
+				EA3C268D221893EF00584D16 /* SearchViewController.swift in Sources */,
+				EA3C26792218929E00584D16 /* API.swift in Sources */,
+				EA3C26832218935D00584D16 /* LiverpoolService.swift in Sources */,
+				EA3C26872218939700584D16 /* BaseRepository.swift in Sources */,
+				EA3C26912218940F00584D16 /* SearchViewModel.swift in Sources */,
 				EA3C266222188C7000584D16 /* AppDelegate.swift in Sources */,
+				EA3C268B221893E500584D16 /* HomeViewController.swift in Sources */,
+				EA3C26932218945000584D16 /* HomeRepository.swift in Sources */,
+				EA3C268F2218940700584D16 /* HomeViewModel.swift in Sources */,
+				EA3C26812218934C00584D16 /* LiverpoolEndpoint.swift in Sources */,
+				EA3C267B221892A700584D16 /* Constants.swift in Sources */,
+				EA3C267F2218933F00584D16 /* RepositoryManager.swift in Sources */,
+				EA3C26852218937F00584D16 /* SearchRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  RepositoryManager.swift
+//  APIResult.swift
 //  Liverpool
 //
 //  Created by Jesus Santa Olalla on 2/16/19.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum APIResult<T> {
+    case success(T)
+    case error(Error)
+}

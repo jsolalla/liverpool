@@ -14,7 +14,6 @@
 		EA3C266C22188C7200584D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA3C266A22188C7200584D16 /* LaunchScreen.storyboard */; };
 		EA3C26792218929E00584D16 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26782218929E00584D16 /* API.swift */; };
 		EA3C267B221892A700584D16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C267A221892A700584D16 /* Constants.swift */; };
-		EA3C267F2218933F00584D16 /* RepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C267E2218933F00584D16 /* RepositoryManager.swift */; };
 		EA3C26812218934C00584D16 /* LiverpoolEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */; };
 		EA3C26832218935D00584D16 /* LiverpoolService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26822218935D00584D16 /* LiverpoolService.swift */; };
 		EA3C26852218937F00584D16 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26842218937F00584D16 /* SearchRepository.swift */; };
@@ -24,6 +23,10 @@
 		EA3C268F2218940700584D16 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C268E2218940700584D16 /* HomeViewModel.swift */; };
 		EA3C26912218940F00584D16 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26902218940F00584D16 /* SearchViewModel.swift */; };
 		EA3C26932218945000584D16 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C26922218945000584D16 /* HomeRepository.swift */; };
+		EA3C269522189A3100584D16 /* LiverpoolParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269422189A3100584D16 /* LiverpoolParams.swift */; };
+		EA3C269922189D0600584D16 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269822189D0600584D16 /* APIResult.swift */; };
+		EA3C269B22189E9F00584D16 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269A22189E9F00584D16 /* Search.swift */; };
+		EA3C269D2218A0F600584D16 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C269C2218A0F600584D16 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +41,6 @@
 		EA3C266D22188C7200584D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA3C26782218929E00584D16 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EA3C267A221892A700584D16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		EA3C267E2218933F00584D16 /* RepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManager.swift; sourceTree = "<group>"; };
 		EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolEndpoint.swift; sourceTree = "<group>"; };
 		EA3C26822218935D00584D16 /* LiverpoolService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolService.swift; sourceTree = "<group>"; };
 		EA3C26842218937F00584D16 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
@@ -48,6 +50,10 @@
 		EA3C268E2218940700584D16 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EA3C26902218940F00584D16 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		EA3C26922218945000584D16 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		EA3C269422189A3100584D16 /* LiverpoolParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolParams.swift; sourceTree = "<group>"; };
+		EA3C269822189D0600584D16 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		EA3C269A22189E9F00584D16 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		EA3C269C2218A0F600584D16 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,8 @@
 		EA3C26762218915C00584D16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA3C269622189CED00584D16 /* API */,
+				EA3C269722189CFC00584D16 /* Realm */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 		EA3C26772218916500584D16 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EA3C269C2218A0F600584D16 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,9 +177,9 @@
 		EA3C267D2218932C00584D16 /* Config */ = {
 			isa = PBXGroup;
 			children = (
-				EA3C267E2218933F00584D16 /* RepositoryManager.swift */,
-				EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */,
 				EA3C26822218935D00584D16 /* LiverpoolService.swift */,
+				EA3C26802218934C00584D16 /* LiverpoolEndpoint.swift */,
+				EA3C269422189A3100584D16 /* LiverpoolParams.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -191,6 +200,22 @@
 				EA3C26902218940F00584D16 /* SearchViewModel.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		EA3C269622189CED00584D16 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C269822189D0600584D16 /* APIResult.swift */,
+				EA3C269A22189E9F00584D16 /* Search.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EA3C269722189CFC00584D16 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,14 +360,17 @@
 				EA3C26792218929E00584D16 /* API.swift in Sources */,
 				EA3C26832218935D00584D16 /* LiverpoolService.swift in Sources */,
 				EA3C26872218939700584D16 /* BaseRepository.swift in Sources */,
+				EA3C269D2218A0F600584D16 /* String+Extensions.swift in Sources */,
 				EA3C26912218940F00584D16 /* SearchViewModel.swift in Sources */,
+				EA3C269922189D0600584D16 /* APIResult.swift in Sources */,
 				EA3C266222188C7000584D16 /* AppDelegate.swift in Sources */,
 				EA3C268B221893E500584D16 /* HomeViewController.swift in Sources */,
 				EA3C26932218945000584D16 /* HomeRepository.swift in Sources */,
 				EA3C268F2218940700584D16 /* HomeViewModel.swift in Sources */,
 				EA3C26812218934C00584D16 /* LiverpoolEndpoint.swift in Sources */,
+				EA3C269522189A3100584D16 /* LiverpoolParams.swift in Sources */,
+				EA3C269B22189E9F00584D16 /* Search.swift in Sources */,
 				EA3C267B221892A700584D16 /* Constants.swift in Sources */,
-				EA3C267F2218933F00584D16 /* RepositoryManager.swift in Sources */,
 				EA3C26852218937F00584D16 /* SearchRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

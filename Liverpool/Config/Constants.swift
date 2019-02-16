@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import Nuke
+
+struct Constants {
+    
+    static let defaultCellLoadImage = UIImage(named: "img_default_cell")
+    static let defaultNukeOptions = ImageLoadingOptions(placeholder: Constants.defaultCellLoadImage, transition: .fadeIn(duration: 0.33))
+    static let defaultErrorKey = "com.liverpool.service.error"
+    static let defaultMaxSearchCriteria = 5
+    
+}
